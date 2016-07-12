@@ -26,12 +26,15 @@ dependencies {
   apt 'com.google.dagger:dagger-compiler:2.0.2'
   compile 'com.google.dagger:dagger:2.0.2'
 
+  apt 'com.jakewharton:butterknife-compiler:8.1.0'
+  compile 'com.jakewharton:butterknife:8.1.0'
+
+  compile 'com.github.akashandroid90.googlesupport:google-support-location:1.4'
   compile 'javax.annotation:jsr250-api:1.0'
   compile 'com.android.support:appcompat-v7:24.0.0'
   compile 'com.android.support:design:24.0.0'
   compile 'com.github.nkzawa:socket.io-client:0.3.0'
   compile 'com.squareup.retrofit2:retrofit:2.1.0'
-  compile 'com.google.android.gms:play-services:9.0.2'
   compile 'com.google.android.gms:play-services-location:9.0.2'
 
   testCompile 'junit:junit:4.12'
