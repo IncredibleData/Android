@@ -40,6 +40,8 @@ public class MainActivity extends AppLocationActivity {
   private ConnectionReceiver mReceiver;
   private IntentFilter mFilter;
 
+  private boolean mIsLocationAvailable;
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -121,11 +123,13 @@ public class MainActivity extends AppLocationActivity {
   private void availableLocation() {
     mLocationStatus.setText(getString(R.string.location_state_available));
     mLocationStatus.setTextColor(ContextCompat.getColor(this, android.R.color.holo_green_dark));
+    mIsLocationAvailable = true;
   }
 
   private void unavailableLocation() {
     mLocationStatus.setText(getString(R.string.location_state_unavailable));
     mLocationStatus.setTextColor(ContextCompat.getColor(this, android.R.color.holo_red_dark));
+    mIsLocationAvailable = false;
   }
 
   @Override
