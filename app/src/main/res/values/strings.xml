@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Incredible data</string>
     <string name="action_settings">Settings</string>
+
+    <string name="send_data_btn">Send WiFi data</string>
+
+    <string name="wifi_status">WiFi status: </string>
+    <string name="location_status">Location status: </string>
+
+    <string name="wifi_state_connected">Connected</string>
+    <string name="wifi_state_disconnected">Disconnected</string>
+
+    <string name="location_state_available">Available</string>
+    <string name="location_state_unavailable">Unavailable</string>
 </resources>
